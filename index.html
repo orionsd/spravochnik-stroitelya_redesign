@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Spravochnik_stroitelya</title>
     <link rel="stylesheet" href="css/style.css"/>
-
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placeholders.min.js"></script>
 </head>
 <body>
 
 <div class="wrapper">
-<header>
+<header id="top">
     <div class="top-banner">
         <img src="img/banner.png" alt=""/>
     </div>
@@ -405,20 +407,19 @@
 
         <div class="form-table__row">
             <div class="form-table__cell form-table__cell_map">
-             <!--   <iframe class="map" src="" frameborder="0"></iframe>-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2286.751527494949!2d82.92365233485933!3d55.030046820566405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1504770893838" width="550" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="form-table__cell form-table__cell_form">
                 <form action="" method="post" class="form">
                     <input class="form__name" name="name" type="text" placeholder="Ваше Имя">
                     <input class="form__email" name="address" type="text" placeholder="E-mail">
                     <input class="form__number" name="phone" type="text" placeholder="Телефон">
-                    <textarea class="form__text" rows="4" cols="50"></textarea>
+                    <textarea class="form__text" rows="4" cols="50" placeholder="Cообщение"></textarea>
                     <input class="form__submit" type="submit" value="Отправить">
                 </form>
             </div>
         </div>
     </div>
-
     <div class="contact-ways">
         <ul class="contact-ways__list">
             <li class="contact-ways__item">
@@ -434,34 +435,37 @@
                 <a class="contact-ways__link contact-ways__link_fax" href="#">Факс</a>
             </li>
         </ul>
-
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
-</section>
 
+</section>
 
 
 <footer>
 
     <div class="social-nets">
 
-        <ul>
+        <ul class="social-nets__list">
             <li class="social-nets__item">
-                <a class="social-nets__link" href="#"></a>
+                <a class="social-nets__link social-nets__link_facebook" href="#"></a>
             </li>
             <li class="social-nets__item">
-                <a class="social-nets__link" href="#"></a>
+                <a class="social-nets__link social-nets__link_vk" href="#"></a>
             </li>
             <li class="social-nets__item">
-                <a class="social-nets__link" href="#"></a>
+                <a class="social-nets__link social-nets__link_linkedin" href="#"></a>
             </li>
             <li class="social-nets__item">
-                <a class="social-nets__link" href="#"></a>
+                <a class="social-nets__link social-nets__link_google" href="#"></a>
             </li>
         </ul>
 
+<span class="social-nets__copyright">Cправочник строителя, копирайты, наш телефон и доп инфа &copy; 2017</span>
 
+    </div>
 
+    <div class="up-button__container">
+        <a class="up-button js_scroll" href="#top"></a>
     </div>
 
 </footer>
@@ -470,6 +474,7 @@
 </div>
 </div>
 </div>
+
 
 
 </body>
