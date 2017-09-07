@@ -97,6 +97,10 @@ ul {
   padding-bottom: 20px;
 }
 
+.main_contacts {
+  background: #ffffff;
+}
+
 .main-wrapper {
   background: url("../img/background.png") repeat-y;
 }
@@ -123,7 +127,7 @@ aside, .content {
 
 .service {
   padding-top: 20px;
-  padding-bottom: 150px;
+  min-height: 500px;
   background: #ffffff;
   -moz-border-top-right-radius: 8px;
   -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
@@ -152,10 +156,32 @@ aside, .content {
   background: rgba(255, 255, 255, .7);
 }
 
+.service-name {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 20px;
+    height: 40px;
+    color: $blue;
+    background: rgba(255, 255, 255, .4);
+    font-size: 26px;
+    border: 2px solid $blue;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+}
+
 .product {
   width: 753px;
   height: 100%;
   margin-left: 20px;
+  margin-bottom: 20px;
 
   &__checkbox-container {
     margin-top: 20px;
@@ -199,21 +225,30 @@ aside, .content {
     border-right: 1px solid #dedede;
   }
 
-  &__text {
+  &__organization,
+  &__text,
+  &__contacts {
     margin-top: 10px;
     font-size: 16px;
   }
+
+  &__organization {
+    color: $blue;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
 }
 
 .product-img,
 .product-description {
   float: left;
   padding: 15px;
-  margin-bottom: 20px;
 }
 
 .product-description {
-  min-height: 200px;
+  min-height: 120px;
   width: 585px;
   padding-right: 0;
 }
@@ -258,16 +293,16 @@ aside, .content {
 }
 
 .advertize-block {
-  background: #ffffff;
+
   margin-bottom: 15px;
 }
 
 .advertize {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin-left: 20px;
   margin-right: -4px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  background: #ffffff;
 
   &__sub-block {
     margin-top: 20px;
@@ -277,6 +312,7 @@ aside, .content {
 
   &__title {
     margin-top: 20px;
+    margin-left: 15px;
     color: #71a461;
     font-size: 28px;
     line-height: 32px;
@@ -293,6 +329,51 @@ aside, .content {
     font-weight: bold;
     color: $gray;
   }
+
+  &__input-area {
+    margin-top: 20px;
+    padding-left: 25px;
+  }
+
+  &__input {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    width: 267px;
+    display: block;
+    padding: 10px;
+    border: 1px solid $salad;
+    outline: none;
+    margin-bottom: 13px;
+    color: #696969;
+    font-size: 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    resize: none;
+  }
+
+}
+
+.promo-container {
+  text-align: center;
+
+  &_text-advertize {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-left: 50px;
+    margin-top: 1px;
+  }
+}
+
+.promo {
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  font-size: 18px;
+  border: 4px solid $light-green;
+  outline: none;
 }
 
 .advertize-description,
@@ -303,7 +384,7 @@ aside, .content {
 
 .advertize-description {
   padding-left: 0;
-  width: 265px;
+  width: 385px;
 }
 
 .buttons_green,
@@ -312,12 +393,19 @@ aside, .content {
   text-align: center;
 }
 
+.buttons_green {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-top: 0;
+}
+
+
 .buttons__in-cart_green,
 .buttons__in-cart_salad {
-  padding: 8px 45px;
   background: $salad;
   color: #fff;
-  border: none;
   font-size: 16px;
   border: 2px solid $salad;
   -webkit-border-radius: 25px;
@@ -328,6 +416,15 @@ aside, .content {
     background: $light-green;
     border: 2px solid $light-green;
   }
+}
+
+.buttons__in-cart_green {
+  display: block;
+  margin-top: 15px;
+}
+
+.buttons__in-cart_salad {
+  margin-right: 20px;
 }
 
 .division-block {
@@ -482,7 +579,6 @@ aside, .content {
 }
 
 .buttons__in-cart_salad {
-  margin-right: 70px;
   background: #76c415;
 }
 
@@ -541,6 +637,8 @@ aside, .content {
 .contact-us {
   background: #ffffff;
   padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 30px;
 
   &__title {
     padding-top: 75px;
@@ -640,6 +738,11 @@ aside, .content {
     border-radius: 4px;
     resize: none;
   }
+}
+
+.contact-ways__block {
+  background: #fff;
+  padding: 30px 0;
 }
 
 .contact-ways {

@@ -68,6 +68,9 @@ ul {
 .main {
   padding-bottom: 20px; }
 
+.main_contacts {
+  background: #ffffff; }
+
 .main-wrapper {
   background: url("../img/background.png") repeat-y; }
 
@@ -89,7 +92,7 @@ aside, .content {
 
 .service {
   padding-top: 20px;
-  padding-bottom: 150px;
+  min-height: 500px;
   background: #ffffff;
   -moz-border-top-right-radius: 8px;
   -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.12);
@@ -110,10 +113,28 @@ aside, .content {
 .product-overlay {
   background: rgba(255, 255, 255, 0.7); }
 
+.service-name {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .service-name__title {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 20px;
+    height: 40px;
+    color: #06a9df;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 26px;
+    border: 2px solid #06a9df;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+
 .product {
   width: 753px;
   height: 100%;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-bottom: 20px; }
   .product__checkbox-container {
     margin-top: 20px;
     font-size: 14px; }
@@ -139,18 +160,21 @@ aside, .content {
     color: #62ad67; }
   .product__order, .product__sale {
     border-right: 1px solid #dedede; }
-  .product__text {
+  .product__organization, .product__text, .product__contacts {
     margin-top: 10px;
     font-size: 16px; }
+  .product__organization {
+    color: #06a9df;
+    font-weight: bold;
+    font-size: 18px; }
 
 .product-img,
 .product-description {
   float: left;
-  padding: 15px;
-  margin-bottom: 20px; }
+  padding: 15px; }
 
 .product-description {
-  min-height: 200px;
+  min-height: 120px;
   width: 585px;
   padding-right: 0; }
 
@@ -182,21 +206,21 @@ aside, .content {
     margin-right: 15px; }
 
 .advertize-block {
-  background: #ffffff;
   margin-bottom: 15px; }
 
 .advertize {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   margin-left: 20px;
   margin-right: -4px;
-  margin-bottom: 60px; }
+  margin-bottom: 20px;
+  background: #ffffff; }
   .advertize__sub-block {
     margin-top: 20px;
     border-left: 1px solid #dadada;
     padding-left: 15px; }
   .advertize__title {
     margin-top: 20px;
+    margin-left: 15px;
     color: #71a461;
     font-size: 28px;
     line-height: 32px; }
@@ -208,6 +232,42 @@ aside, .content {
     line-height: 1.8;
     font-weight: bold;
     color: #858481; }
+  .advertize__input-area {
+    margin-top: 20px;
+    padding-left: 25px; }
+  .advertize__input {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    width: 267px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #84ad1b;
+    outline: none;
+    margin-bottom: 13px;
+    color: #696969;
+    font-size: 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    resize: none; }
+
+.promo-container {
+  text-align: center; }
+  .promo-container_text-advertize {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    margin-left: 50px;
+    margin-top: 1px; }
+
+.promo {
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  font-size: 18px;
+  border: 4px solid #90d23d;
+  outline: none; }
 
 .advertize-description,
 .advertize-img {
@@ -216,19 +276,24 @@ aside, .content {
 
 .advertize-description {
   padding-left: 0;
-  width: 265px; }
+  width: 385px; }
 
 .buttons_green,
 .buttons_salad {
   margin-top: 25px;
   text-align: center; }
 
+.buttons_green {
+  float: right;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  margin-top: 0; }
+
 .buttons__in-cart_green,
 .buttons__in-cart_salad {
-  padding: 8px 45px;
   background: #84ad1b;
   color: #fff;
-  border: none;
   font-size: 16px;
   border: 2px solid #84ad1b;
   -webkit-border-radius: 25px;
@@ -239,6 +304,13 @@ aside, .content {
   .buttons__in-cart_salad:hover {
     background: #90d23d;
     border: 2px solid #90d23d; }
+
+.buttons__in-cart_green {
+  display: block;
+  margin-top: 15px; }
+
+.buttons__in-cart_salad {
+  margin-right: 20px; }
 
 .division-block {
   background: #90d23d;
@@ -354,7 +426,6 @@ aside, .content {
   text-align: right; }
 
 .buttons__in-cart_salad {
-  margin-right: 70px;
   background: #76c415; }
 
 .partners {
@@ -398,7 +469,9 @@ aside, .content {
 
 .contact-us {
   background: #ffffff;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+  padding-left: 40px;
+  padding-right: 30px; }
   .contact-us__title {
     padding-top: 75px;
     text-align: center;
@@ -472,6 +545,10 @@ aside, .content {
   -moz-border-radius: 4px;
   border-radius: 4px;
   resize: none; }
+
+.contact-ways__block {
+  background: #fff;
+  padding: 30px 0; }
 
 .contact-ways {
   width: 860px;
