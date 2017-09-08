@@ -174,7 +174,7 @@ aside, .content {
     -moz-border-radius: 5px;
     border-radius: 5px;
   }
-  
+
 }
 
 .product {
@@ -237,7 +237,6 @@ aside, .content {
     font-weight: bold;
     font-size: 18px;
   }
-
 
 }
 
@@ -306,13 +305,12 @@ aside, .content {
 
   &__sub-block {
     margin-top: 20px;
-    border-left: 1px solid #dadada;
     padding-left: 15px;
   }
 
   &__title {
-    margin-top: 20px;
     margin-left: 15px;
+    margin-bottom: 20px;
     color: #71a461;
     font-size: 28px;
     line-height: 32px;
@@ -330,7 +328,7 @@ aside, .content {
     color: $gray;
   }
 
-  &__input-area {
+  &__total {
     margin-top: 20px;
     padding-left: 25px;
   }
@@ -352,12 +350,71 @@ aside, .content {
     resize: none;
   }
 
+  &__heading,
+  &__name-organization,
+  &__text-desciption,
+  &__phone,
+  &__schedule,
+  &__address,
+  &__site,
+  &__email,
+  &__nets, {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    min-width: 400px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #90d23d;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &__phone,
+  &__heading,
+  &__text-desciption {
+    background: url("../img/star.png") top right no-repeat;
+  }
+
+  &__text-desciption {
+    min-width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: none;
+    height: inherit;
+  }
+
+  &__total {
+    margin-top: 100px;
+  }
+
+  &__obligatory-block {
+    margin-top: 20px;
+  }
+
+  &__obligatory-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  &__obligatory__img {
+    display: block;
+  }
+
+}
+
+.advertize-block {
+  margin-top: 20px;
 }
 
 .promo-container {
   text-align: center;
 
-  &_text-advertize {
+  &_banner-advertize {
     display: inline-block;
     vertical-align: top;
     float: left;
@@ -376,15 +433,16 @@ aside, .content {
   outline: none;
 }
 
-.advertize-description,
+.advertize__input-area,
 .advertize-img {
   float: left;
   padding: 10px 25px;
 }
 
-.advertize-description {
+.advertize__input-area {
   padding-left: 0;
-  width: 385px;
+  margin-left: 30px;
+  width:430px;
 }
 
 .buttons_green,
@@ -400,7 +458,6 @@ aside, .content {
   margin-right: 100px;
   margin-top: 0;
 }
-
 
 .buttons__in-cart_green,
 .buttons__in-cart_salad {
@@ -482,7 +539,7 @@ aside, .content {
 
 }
 
-.text-advertize {
+.banner-advertize {
   min-height: 720px;
   background: #ffffff;
 
@@ -521,6 +578,32 @@ aside, .content {
     }
   }
 
+  &__heading,
+  &__name-organization,
+  &__text-desciption,
+  &__phone {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    min-width: 500px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #90d23d;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &__text-desciption {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: none;
+    height: inherit;
+  }
+
   &__title-container {
     width: 99.5%;
     margin: 0 auto;
@@ -544,9 +627,28 @@ aside, .content {
     margin-left: 20px;
   }
 
-  &__text-container {
+  &__input-area {
+    float: left;
     min-height: 205px;
     padding: 15px;
+  }
+
+  &__upload-container {
+    float: right;
+  }
+
+  &__upload-lable {
+    margin-top: 60px;
+    margin-left: 20px;
+    width: 208px;
+    height: 208px;
+    display: block;
+    border: 2px solid #effddc;
+    background: url("../img/add_file.png");
+    cursor: pointer;
+    &:hover {
+      border: 2px solid #90d23d;
+    }
   }
 
   &__text {
@@ -572,6 +674,7 @@ aside, .content {
     font-size: 36px;
     margin-left: 32px;
   }
+
 }
 
 .buttons_salad {
