@@ -40,19 +40,21 @@ ul {
     display: inline-block;
     vertical-align: top;
     color: #ffffff;
-    margin-right: 35px; }
+    margin-right: 120px; }
   .nav-list {
-    width: 700px;
+    width: 890px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 16px;
     list-style: none; }
     .nav-list li:nth-child(2) {
-      margin-right: 22px; }
+      margin-right: 106px; }
+    .nav-list li:last-child {
+      margin-right: 0; }
   .nav__link {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 0 10px;
     padding-left: 55px; }
 
 .catalog {
@@ -133,8 +135,7 @@ aside, .content {
 .product {
   width: 753px;
   height: 100%;
-  margin-left: 20px;
-  margin-bottom: 20px; }
+  margin-left: 20px; }
   .product__checkbox-container {
     margin-top: 20px;
     font-size: 14px; }
@@ -174,7 +175,7 @@ aside, .content {
   padding: 15px; }
 
 .product-description {
-  min-height: 120px;
+  min-height: 100px;
   width: 585px;
   padding-right: 0; }
 
@@ -264,7 +265,7 @@ aside, .content {
     border-radius: 4px;
     outline: none; }
   .advertize__phone, .advertize__heading, .advertize__text-desciption {
-    background: url("../img/star.png") top right no-repeat; }
+    background: url("../img/star-small.png") top right no-repeat; }
   .advertize__text-desciption {
     min-width: 400px;
     padding-top: 10px;
@@ -390,7 +391,7 @@ aside, .content {
     transition: transform, 0.6s ease; }
 
 .banner-advertize {
-  min-height: 720px;
+  min-height: 590px;
   background: #ffffff; }
   .banner-advertize__img-container {
     width: 32%;
@@ -425,6 +426,7 @@ aside, .content {
     height: 40px;
     font-size: 18px;
     border: 1px solid #90d23d;
+    background: #fff url("../img/star-small.png") top right no-repeat;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -453,6 +455,8 @@ aside, .content {
     color: #71a461;
     font-size: 34px;
     margin-left: 20px; }
+    .banner-advertize__title-small {
+      font-size: 15px; }
   .banner-advertize__input-area {
     float: left;
     min-height: 205px;
@@ -513,26 +517,6 @@ aside, .content {
     margin-right: 55px; }
   .slider div:last-child {
     margin-right: 0; }
-  .slider:before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 35px;
-    top: 42px;
-    left: -70px;
-    background: url("../img/slider_arrow-back.png") 0 0 no-repeat;
-    cursor: pointer; }
-  .slider:after {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 35px;
-    top: 42px;
-    right: -70px;
-    background: url("../img/slider_arrow-forward.png") 0 0 no-repeat;
-    cursor: pointer; }
 
 .contact-us {
   background: #ffffff;
@@ -540,6 +524,7 @@ aside, .content {
   padding-left: 40px;
   padding-right: 30px; }
   .contact-us__title {
+    width: 940px;
     padding-top: 75px;
     text-align: center;
     font-size: 40px; }
@@ -648,15 +633,15 @@ aside, .content {
 
 footer {
   position: relative;
-  height: 220px;
+  height: 160px;
   background: #90d23d; }
 
 .social-nets {
   margin: 0 auto;
   width: 550px;
-  padding-top: 55px; }
+  padding-top: 30px; }
   .social-nets__list {
-    width: 250px;
+    width: 200px;
     margin: 0 auto; }
     .social-nets__list li:last-child {
       margin-right: 0; }
@@ -700,11 +685,15 @@ footer {
 
 .up-button__container {
   position: absolute;
-  top: 100px;
-  right: 160px; }
+  top: 70px;
+  right: 160px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center; }
 
 .up-button {
-  display: block;
+  display: inline-block;
   width: 32px;
   height: 20px;
   background: url("../img/icons.png") -5px -311px no-repeat; }
