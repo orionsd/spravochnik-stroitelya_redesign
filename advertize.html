@@ -85,6 +85,8 @@
                                                 <span class="ik_select_option_label">Строительный инструмент</span></li>
                                             <li class="ik_select_option" data-value="sistemi-ohrani">
                                                 <span class="ik_select_option_label">Системы охраны</span></li>
+                                            <li class="ik_select_option" data-value="ne-vibrano">
+                                                <span class="ik_select_option_label">Не выбрано</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -105,6 +107,7 @@
                                 <option>Алмазное бурение</option>
                                 <option>Строительный инструмент</option>
                                 <option>Системы охраны</option>
+                                <option>Не выбрано</option>
 
                             </select>
                         </div>
@@ -1128,6 +1131,11 @@
 </div>
 </div>
 
+<script>
+    $(function () {
+        $('select').ikSelect();
+    });
+</script>
 
 </body>
 </html>
