@@ -39,33 +39,44 @@ ul {
   .nav__item {
     display: inline-block;
     vertical-align: top;
-    color: #ffffff;
-    margin-right: 120px; }
+    width: 260px;
+    color: #ffffff; }
+    .nav__item:hover {
+      background-color: #087700;
+      -webkit-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      cursor: pointer; }
   .nav-list {
-    width: 890px;
+    width: 850px;
     margin: 0 auto;
-    padding-top: 16px;
     list-style: none; }
-    .nav-list li:nth-child(2) {
-      margin-right: 106px; }
     .nav-list li:last-child {
-      margin-right: 0; }
+      width: 223px; }
+    .nav-list li:nth-child(2) a {
+      margin-left: 75px; }
+    .nav-list li:last-child a {
+      margin-left: 66px; }
   .nav__link {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 11px;
+    font-weight: bold;
     text-transform: uppercase;
-    padding: 0 10px;
-    padding-left: 55px; }
+    padding: 21px 0 21px 0;
+    margin-left: 120px; }
 
 .catalog {
-  background: url("../img/icons.png") 0 0px no-repeat; }
+  background: url(../img/nav-burger.png) 72px 17px no-repeat; }
 
 .advertisement {
-  background: url("../img/icons.png") 0 -29px no-repeat; }
+  background: url("../img/nav-email.png") 27px 17px no-repeat; }
 
 .contacts {
   padding-left: 53px;
-  background: url("../img/icons.png") 0 -57px no-repeat; }
+  background: url("../img/nav-contacts.png") 83px 17px no-repeat; }
 
 .main {
   padding-bottom: 20px; }
@@ -265,7 +276,7 @@ aside, .content {
     border-radius: 4px;
     outline: none; }
   .advertize__phone, .advertize__heading, .advertize__text-desciption {
-    background: url("../img/star-small.png") top right no-repeat; }
+    background: url(../img/star-small.png) 404px 4px no-repeat; }
   .advertize__text-desciption {
     min-width: 400px;
     padding-top: 10px;
@@ -298,9 +309,13 @@ aside, .content {
   width: 200px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 1px;
   height: 40px;
   font-size: 18px;
-  border: 4px solid #90d23d;
+  border: 2px solid #90d23d;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   outline: none; }
 
 .advertize__input-area,
@@ -419,14 +434,14 @@ aside, .content {
   .banner-advertize__heading, .banner-advertize__name-organization, .banner-advertize__text-desciption, .banner-advertize__phone {
     font-family: 'Open Sans', sans-serif;
     display: block;
-    min-width: 500px;
+    min-width: 400px;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
     height: 40px;
     font-size: 18px;
     border: 1px solid #90d23d;
-    background: #fff url("../img/star-small.png") top right no-repeat;
+    background: #fff url(../img/star-small.png) 404px 4px no-repeat;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -465,15 +480,25 @@ aside, .content {
     float: right; }
   .banner-advertize__upload-lable {
     margin-top: 60px;
-    margin-left: 20px;
-    width: 208px;
-    height: 208px;
+    margin-left: 80px;
+    width: 80px;
+    height: 84px;
     display: block;
     border: 2px solid #effddc;
     background: url("../img/add_file.png");
     cursor: pointer; }
     .banner-advertize__upload-lable:hover {
-      border: 2px solid #90d23d; }
+      background: url("../img/add_file_green.png");
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+    .banner-advertize__upload-lable:not(hover) {
+      background: url("../img/add_file.png");
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
   .banner-advertize__text {
     color: #909090;
     font-size: 20px;
@@ -697,6 +722,113 @@ footer {
   width: 32px;
   height: 20px;
   background: url("../img/icons.png") -5px -311px no-repeat; }
+
+.ik_select {
+  margin-bottom: 11px; }
+
+.intro-select1-link,
+.intro-select2-link .ik_select_link_inner {
+  position: relative;
+  padding: 20px 50px 20px 30px; }
+
+.intro-select1-link,
+.intro-select1-dd
+.ik_select_list,
+.intro-select2-link
+.ik_select_link_inner,
+.intro-select2-dd
+.ik_select_list {
+  background: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  color: #858481;
+  border: 1px solid #90d23d;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.ik_select_link {
+  height: 20px !important;
+  margin-top: 3px;
+  padding: 10px 35px 10px 15px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #858481; }
+
+.ik_select_link_text {
+  font-size: 16px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.ik_select_link:after,
+.intro-select2-link
+.ik_select_link_inner:after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px; }
+
+.ik_select_dropdown {
+  top: -1px;
+  left: -2px;
+  min-width: 410px;
+  max-width: none;
+  width: auto !important;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #90d23d;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.intro-select1-dd .ik_select_list li.ik_select_hover,
+.intro-select2-dd .ik_select_list li.ik_select_hover {
+  background: #fff; }
+
+.intro-select1-dd .ik_select_list li,
+.intro-select2-dd .ik_select_list li {
+  padding: 2px 50px 2px 30px; }
+
+.ik_select_autowidth {
+  min-width: 390px;
+  margin-top: -44px;
+  margin-left: 2px;
+  cursor: pointer; }
+
+.ik_select_list {
+  /*  width: 405px;*/ }
+
+.ik_select_list .ik_select_option {
+  padding: 6px 15px;
+  padding-left: 12px;
+  cursor: pointer; }
+  .ik_select_list .ik_select_option:hover {
+    color: #90d23d; }
+
+.ik_select_option_label {
+  font-size: 16px; }
+
+.intro-select1-link {
+  cursor: pointer;
+  width: 370px; }
+
+.intro-select1-link:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 65%;
+  right: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px;
+  background: url("../img/triangle.png") 0 0 no-repeat; }
 
 ::-webkit-input-placeholder {
   opacity: 1;
