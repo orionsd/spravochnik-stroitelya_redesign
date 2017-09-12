@@ -1202,20 +1202,14 @@ footer {
     max-width: 100%;
   }
 
-  .side-banners {
-    width: 550px;
-    float: none;
-    margin: 0 auto;
-  }
-
-  .banner-block {
+/*  .banner-block {
     display: inline-block;
     vertical-align: top;
     margin-right: 10px;
-  }
+  }*/
 
   .content_banner {
-    width: 99%;
+    width: 81%;
   }
 
   .promo-container_banner-advertize {
@@ -1277,9 +1271,9 @@ footer {
 
   }
 
-  .side-banners {
+  /*.side-banners {
     width: 550px;
-  }
+  }*/
 
   .promo-container {
     text-align: center;
@@ -1506,13 +1500,187 @@ footer {
     width: 100%;
   }
 
+  .banner-advertize__description {
+    width: 95%;
+  }
+
+  .content_banner {
+    width: 100%;
+  }
+
+  .advertize {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .advertize-img {
+    width: 280px;
+    margin: 0 auto;
+    float: none;
+  }
+  
+  .advertize__input-area {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .advertize__total {
+    margin-top: 30px;
+  }
+
+  .buttons_salad {
+    text-align: left;
+  }
+  
+  .buttons__in-cart_salad {
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .side-banners {
     width: 65%;
     text-align: center;
   }
 
+  .banner-advertize__title-container {
+    height: inherit;
+  }
+
+  
+  .banner-advertize__heading,
+  .banner-advertize__name-organization,
+  .banner-advertize__text-desciption,
+  .banner-advertize__phone {
+    min-width:inherit;
+    width: 264px;
+  }
+
+  .intro-select1-link {
+    width: 250px;
+  }
+
+  .ik_select_autowidth {
+    min-width: inherit;
+  }
+
+  .advertize__input-area {
+
+  }
+
+  .advertize__heading,
+  .advertize__name-organization,
+  .advertize__text-desciption,
+  .advertize__phone,
+  .advertize__schedule,
+  .advertize__address,
+  .advertize__site,
+  .advertize__email,
+  .advertize__nets {
+    min-width: inherit;
+    width: 263px;
+  }
+
+  .advertize__input-area,
+  .advertize-img {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .division__part {
+    font-size: 11px;
+  }
+
+  .advertize__title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .select-block_text:after {
+    right: -16px;
+  }
+
+  .ik_select_dropdown {
+    min-width: 274px;
+  }
+
+  .division {
+    margin-top: 24px;
+  }
+
+  .banner-advertize__img {
+    width: 280px;
+  }
+
+  .banner-advertize__img-container {
+    float: none;
+    margin-bottom: 20px;
+    text-align: center;
+    width: inherit;
+    margin-left: 0;
+  }
+
+  .banner-advertize__title {
+    font-size: 24px;
+    line-height: 44px;
+  }
+
+  .banner-advertize__description {
+    width: 310px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .banner-advertize__total {
+    height: inherit;
+  }
+
+  .promo-container_banner-advertize {
+    margin-top: 30px;
+  }
+
+  .banner-advertize__price {
+    margin-top: 20px;
+    float: none;
+    text-align: center;
+  }
+  
+  .buttons_salad {
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .banner-advertize__upload-container {
+    margin-top: 20px;
+  }
+
+  .intro-select1-link {
+    width: 234px;
+  }
+
+  .ik_select_link {
+    height: 18px !important;
+    margin-top: 5px;
+  }
+
+  .advertize__input-area {
+    width: 290px;
+  }
+
+  .select-block_text:after {
+    right: 10px;
+  }
+
+  .advertize-img {
+    width: 300px;
+  }
+  
 }
