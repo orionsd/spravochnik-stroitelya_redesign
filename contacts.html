@@ -14,7 +14,12 @@
 <div class="wrapper">
     <header id="top">
         <div class="top-banner">
-            <img src="img/banner.png" alt=""/>
+            <img class="top-banner__img-static" src="img/banner.png" alt=""/>
+            <object class="flash" width="1280" height="127">
+                <param name="movie" value="img/mps.swf">
+                <embed src="img/mps.swf" width="1280" height="127">
+                </embed>
+            </object>
         </div>
         <div class="logo cl-fix">
             <img src="img/logo.png" alt="">
@@ -47,7 +52,7 @@
                                     <h3 class="form-table__title">Адрес</h3>
                                     <sub class="form-table__text">Мы находим здесь</sub>
                                 </div>
-                                <div class="form-table__cell">
+                                <div class="form-table__cell form-table__cell_contact-desktop">
                                     <h3 class="form-table__title">Напишите нам</h3>
                                     <sub class="form-table__text">Ну правда напишите</sub>
                                 </div>
@@ -59,6 +64,12 @@
                                             width="550" height="380" frameborder="0" style="border:0"
                                             allowfullscreen></iframe>
                                 </div>
+
+                                <div class="form-table__cell form-table__cell_contact-adaptive">
+                                    <h3 class="form-table__title">Напишите нам</h3>
+                                    <sub class="form-table__text">Ну правда напишите</sub>
+                                </div>
+
                                 <div class="form-table__cell form-table__cell_form">
                                     <form action="" method="post" class="form">
                                         <input class="form__name" name="name" type="text" placeholder="Ваше Имя">
@@ -74,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="side-banners">
+                <div class="side-banners side-banners_contact">
                     <div class="banner-block">
                         <a class="side-banners__link" href="#">
                             <img class="side-banners__img" src="img/banner_01.jpg" alt=""/>

@@ -15,7 +15,12 @@
 <div class="wrapper">
 <header id="top">
     <div class="top-banner">
-        <img src="img/banner.png" alt=""/>
+        <img class="top-banner__img-static" src="img/banner.png" alt=""/>
+        <object class="flash" width="1280" height="127">
+            <param name="movie" value="img/mps.swf">
+            <embed src="img/mps.swf" width="1280" height="127">
+            </embed>
+        </object>
     </div>
     <div class="logo cl-fix">
         <img src="img/logo.png" alt="">
@@ -81,7 +86,7 @@
                                 <div class="ik_select_list" style="position: relative;">
                                     <div class="ik_select_list_inner" style="height: auto;">
                                         <ul>
-                                            <li class="ik_select_option" data-value="electromontage">
+                                            <li class="ik_select_option" data-value="rubrika">
                                                 <span class="ik_select_option_label">Рубрика</span></li>
                                             <li class="ik_select_option" data-value="electromontage">
                                                 <span class="ik_select_option_label">Электромонтаж</span></li>
@@ -117,7 +122,7 @@
                             </div>
                             <select class="intro-select1"
                                     style="position: absolute; margin: 0px; padding: 0px; top: 0px; left: -9999px;">
-                                <option>Рубрика</option>
+                                <option class="rubrika">Рубрика</option>
                                 <option>Электромонтаж</option>
                                 <option>Cантехника</option>
                                 <option>Водопровод</option>
