@@ -305,9 +305,8 @@ aside, .content {
   .promo-container_banner-advertize {
     display: inline-block;
     vertical-align: top;
-    float: left;
-    margin-left: 50px;
-    margin-top: 117px; }
+    float: right;
+    margin-right: 27px; }
 
 .promo {
   width: 200px;
@@ -366,7 +365,7 @@ aside, .content {
   margin-top: 15px; }
 
 .buttons__in-cart_salad {
-  margin-right: 20px; }
+  margin-right: 25px; }
 
 .division-block {
   background: #90d23d;
@@ -483,7 +482,7 @@ aside, .content {
     min-height: 205px;
     padding: 15px; }
   .banner-advertize__upload-container {
-    margin: 50px 50px 0 0;
+    margin: 50px 30px 117px 0;
     width: 100px;
     height: 104px;
     text-align: center;
@@ -895,16 +894,21 @@ footer {
   .logo img {
     max-width: 100%; }
 
-  /*  .banner-block {
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 10px;
-    }*/
+  .banner-advertize__img {
+    max-width: 100%; }
+
   .content_banner {
     width: 81%; }
 
-  .promo-container_banner-advertize {
-    margin-top: 0px; } }
+  /*  .promo-container_banner-advertize {
+       margin-top: 0px;
+    }*/ }
+@media only screen and (min-width: 1024px) and (max-width: 1140px) {
+  .advertize {
+    width: 78%; } }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .advertize {
+    width: 100%; } }
 @media only screen and (min-width: 768px) and (max-width: 1140px) {
   .wrapper {
     width: 100%; }
@@ -920,8 +924,7 @@ footer {
   .nav-list {
     width: 770px; }
 
-  .form-table__cell,
-  .side-banners {
+  .form-table__cell {
     width: 630px;
     margin: 0 auto; }
 
@@ -945,9 +948,10 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px; }
 
-  /*.side-banners {
-    width: 550px;
-  }*/
+  .advertize__input-area {
+    width: 312px;
+    float: left; }
+
   .promo-container {
     text-align: center; }
     .promo-container_banner-advertize {
@@ -955,13 +959,14 @@ footer {
       margin-left: 17px; }
 
   .advertize {
+    float: left;
     margin-right: 0; }
 
   .advertize-img {
     width: 27%; }
 
   .advertize__image {
-    max-width: 100%; }
+    width: 220px; }
 
   .advertize-img {
     float: left !important; }
@@ -973,10 +978,30 @@ footer {
     display: none; }
 
   .content_banner {
-    width: 100%; } }
+    width: 100%; }
+
+  .select-block_text {
+    width: 430px; }
+
+  .advertize__title {
+    font-size: 24px; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .banner-advertize__upload-container {
-    margin-top: 5px; } }
+    margin-top: 5px;
+    margin-bottom: 30px; }
+
+  .side-banners {
+    float: none;
+    width: 550px;
+    margin: 0 auto; }
+
+  .banner-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; }
+
+  .select-block_text {
+    width: 430px; } }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   .service {
     width: 100%;
@@ -998,14 +1023,6 @@ footer {
 
   .product-description {
     width: 100%; }
-
-  .side-banners {
-    float: none; }
-
-  .banner-block {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px; }
 
   .product-description {
     padding-right: 0;
@@ -1092,7 +1109,7 @@ footer {
     margin-right: auto; }
 
   .contact-us__title {
-    font-size: 28px; }
+    font-size: 26px; }
 
   .form__name,
   .form__number,
@@ -1107,8 +1124,14 @@ footer {
     width: 100%; }
 
   .side-banners {
-    width: 400px;
+    float: none;
+    width: 540px;
     margin: 0 auto; }
+
+  .banner-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; }
 
   .form-table__cell_map {
     width: 100%; }
@@ -1164,7 +1187,10 @@ footer {
     width: 250px; }
 
   .ik_select_autowidth {
-    min-width: inherit; }
+    min-width: 150px !important; }
+
+  .ik_select_link_novalue {
+    width: 150px; }
 
   .advertize__heading,
   .advertize__name-organization,
