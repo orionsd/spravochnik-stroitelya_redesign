@@ -1356,6 +1356,15 @@ footer {
     right: 10px; }
 
   .advertize-img {
-    width: 300px; } }
+    width: 300px; }
+
+  .advertize__phone,
+  .advertize__heading,
+  .advertize__text-desciption,
+  .banner-advertize__heading,
+  .banner-advertize__name-organization,
+  .banner-advertize__text-desciption,
+  .banner-advertize__phone {
+    background: #fff url(../img/star-small.png) 268px 4px no-repeat; } }
 
 /*# sourceMappingURL=style.css.map */

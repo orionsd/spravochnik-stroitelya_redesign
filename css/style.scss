@@ -768,7 +768,7 @@ aside, .content {
     margin-right: 0;
   }
 
-  &__img{
+  &__img {
     border: none;
   }
 
@@ -1187,11 +1187,11 @@ footer {
 }
 
 .red {
-   border: 1px solid red;
-   -webkit-transition: all, 0.6s ease;
-   -ms-transition: all, 0.6s ease;
-   transition: all, 0.6s ease;
- }
+  border: 1px solid red;
+  -webkit-transition: all, 0.6s ease;
+  -ms-transition: all, 0.6s ease;
+  transition: all, 0.6s ease;
+}
 
 .normal {
   border: 1px solid #90d23d;
@@ -1262,7 +1262,6 @@ footer {
   .contact-us {
     padding-bottom: 0;
   }
-
 
 }
 
@@ -1443,7 +1442,7 @@ footer {
   .flash {
     display: none;
   }
-  
+
   .top-banner {
     max-width: 100%;
   }
@@ -1474,7 +1473,7 @@ footer {
   .product-description {
     width: 100%;
   }
-  
+
   .product-description {
     padding-right: 0;
     padding-left: 0;
@@ -1628,7 +1627,6 @@ footer {
     width: 140px;
   }
 
-
   .form-table__cell_map {
     width: 100%;
   }
@@ -1651,7 +1649,7 @@ footer {
     margin: 0 auto;
     float: none;
   }
-  
+
   .advertize__input-area {
     margin: 0 auto;
     float: none;
@@ -1664,7 +1662,7 @@ footer {
   .buttons_salad {
     text-align: left;
   }
-  
+
   .buttons__in-cart_salad {
     margin-left: 10px;
     margin-right: 0;
@@ -1687,12 +1685,12 @@ footer {
   .banner-advertize__title-container {
     height: inherit;
   }
-  
+
   .banner-advertize__heading,
   .banner-advertize__name-organization,
   .banner-advertize__text-desciption,
   .banner-advertize__phone {
-    min-width:inherit;
+    min-width: inherit;
     width: 264px;
   }
 
@@ -1784,7 +1782,7 @@ footer {
     float: none;
     text-align: center;
   }
-  
+
   .buttons_salad {
     text-align: center;
     margin-top: 0px;
@@ -1814,5 +1812,16 @@ footer {
   .advertize-img {
     width: 300px;
   }
-  
+
+  .advertize__phone,
+  .advertize__heading,
+  .advertize__text-desciption,
+  .banner-advertize__heading,
+  .banner-advertize__name-organization,
+  .banner-advertize__text-desciption,
+  .banner-advertize__phone {
+
+    background: #fff url(../img/star-small.png) 268px 4px no-repeat;
+  }
+
 }
