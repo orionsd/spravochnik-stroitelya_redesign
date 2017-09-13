@@ -882,6 +882,18 @@ footer {
   -ms-transition: all, 0.6s ease;
   transition: all, 0.6s ease; }
 
+.red {
+  border: 1px solid red;
+  -webkit-transition: all, 0.6s ease;
+  -ms-transition: all, 0.6s ease;
+  transition: all, 0.6s ease; }
+
+.normal {
+  border: 1px solid #90d23d;
+  -webkit-transition: all, 0.6s ease;
+  -ms-transition: all, 0.6s ease;
+  transition: all, 0.6s ease; }
+
 ::-webkit-input-placeholder {
   opacity: 1;
   color: #d5d5d5 !important; }

@@ -16,14 +16,17 @@ $(document).ready(function () {
 
         introSelect1.on('change', '', function (e) {
             introSelect1link.removeClass("red");
+            introSelect1link.addClass("normal");
         });
 
-        aDescription.keyup(function () {
+        aDescription.focus(function() {
             $(this).removeClass("red");
+            $(this).addClass("normal");
         });
 
-        aPhone.keyup(function () {
+        aPhone.focus(function() {
             $(this).removeClass("red");
+            $(this).addClass("normal");
         });
 
         if (aDescription.val() == 0) {
