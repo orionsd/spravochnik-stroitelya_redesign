@@ -19,25 +19,28 @@ $(document).ready(function () {
             introSelect1link.addClass("normal");
         });
 
-        aDescription.focus(function() {
+        aDescription.keyup(function() {
             $(this).removeClass("red");
             $(this).addClass("normal");
         });
 
-        aPhone.focus(function() {
+        aPhone.keyup(function() {
             $(this).removeClass("red");
             $(this).addClass("normal");
         });
 
         if (aDescription.val() == 0) {
+            aDescription.removeClass("normal");
             aDescription.addClass("red");
         }
 
         if (aPhone.val() == 0) {
+            aPhone.removeClass("normal");
             aPhone.addClass("red");
         }
 
         if($('.intro-select1')[0].selectedIndex <= 0) {
+            introSelect1link.removeClass("normal");
             introSelect1link.addClass("red");
         }
         e.preventDefault();
