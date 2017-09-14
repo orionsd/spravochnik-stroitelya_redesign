@@ -575,6 +575,9 @@ aside, .content {
     text-align: center;
     font-size: 40px; }
 
+/*.content {
+  width: 75%;
+}*/
 .form-table {
   display: table;
   width: 1000px;
@@ -587,14 +590,27 @@ aside, .content {
     vertical-align: top;
     padding-bottom: 50px; }
   .form-table__cell_map {
-    width: 630px;
-    height: 400px; }
+    width: 470px;
+    padding-right: 20px;
+    overflow: hidden;
+    padding-bottom: 350px;
+    position: relative; }
+  .form-table__cell_form,
+  .form-table .form-table__cell_contact-desktop {
+    padding-left: 50px; }
   .form-table__title {
     margin-bottom: -3px;
     font-size: 30px; }
   .form-table__text {
     font-size: 14px;
     font-weight: bold; }
+
+.iframe-map {
+  left: 0;
+  top: 0;
+  height: 380px;
+  width: 100%;
+  position: absolute; }
 
 .form input {
   display: block; }
@@ -931,20 +947,31 @@ footer {
   .content_banner {
     width: 81%; }
 
-  .side-banners_contact {
+  /*.side-banners_contact {
     float: none;
-    width: 550px;
-    margin: 0 auto; }
+  }
+
+   .side-banners_contact {
+    float: none;
+  }
 
   .side-banners_contact .banner-block {
     float: left;
-    margin-right: 15px; }
-
+    margin-right: 15px;
+  }*/
   .contact-us {
-    padding-bottom: 0; } }
+    width: 820px;
+    padding-bottom: 0;
+    padding-right: 0; }
+
+  .form-table__cell_map {
+    width: inherit; } }
 @media only screen and (min-width: 1024px) and (max-width: 1140px) {
   .advertize {
-    width: 78%; } }
+    width: 78%; }
+
+  .side-banners_contact {
+    float: none; } }
 @media only screen and (min-width: 768px) and (max-width: 1140px) {
   .wrapper {
     width: 100%; }
@@ -1024,15 +1051,12 @@ footer {
     font-size: 24px; }
 
   .side-banners_contact {
-    float: none;
-    width: 550px;
-    margin: 0 auto; }
-
-  .side-banners_contact .banner-block {
-    float: left;
-    margin-right: 15px; }
+    float: right;
+    margin-right: 10px; }
 
   .contact-us {
+    width: 700px;
+    float: left;
     margin-bottom: 0; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .banner-advertize__upload-container {
@@ -1057,12 +1081,16 @@ footer {
 
   .side-banners_contact {
     float: none;
-    width: 550px;
-    margin: 0 auto; }
+    width: inherit;
+    /* width: 550px;
+     margin: 0 auto;*/ }
 
   .side-banners_contact .banner-block {
-    float: left;
-    margin-right: 15px; } }
+    float: none;
+    /*    margin-right: 15px;*/ } }
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  .side-banners_contact {
+    width: 550px; } }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   .top-banner__img-static {
     display: inline-block;
@@ -1112,13 +1140,18 @@ footer {
     display: block; }
 
   .contact-us {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-left: 10px; }
 
   .form-table__cell_contact-adaptive {
-    display: block; }
+    display: block;
+    margin-top: 30px; }
 
   .form-table__cell_contact-desktop {
-    display: none; } }
+    display: none; }
+
+  .form-table__cell_form {
+    padding-left: 0; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .top-banner,
   .logo {
@@ -1200,7 +1233,8 @@ footer {
   .iframe {
     width: 100%; }
 
-  .side-banners {
+  .side-banners,
+  .side-banners_contact {
     float: none;
     width: 480px;
     margin: 0 auto; }
