@@ -310,7 +310,6 @@ aside, .content {
   &__send-order {
     margin-right: 15px;
   }
-
 }
 
 .advertize-block {
@@ -411,7 +410,7 @@ aside, .content {
   }
 
   &__total {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   &__obligatory-block {
@@ -466,6 +465,7 @@ aside, .content {
 
 .advertize-img {
   float: right;
+  margin-top: 50px;
 }
 
 .advertize__input-area {
@@ -783,12 +783,7 @@ aside, .content {
     text-align: center;
     font-size: 40px;
   }
-
 }
-
-/*.content {
-  width: 75%;
-}*/
 
 .form-table {
   display: table;
@@ -860,9 +855,6 @@ aside, .content {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    /*  &:hover {
-        border: 1px solid #8c8c8c;
-      }*/
   }
 
   &__submit {
@@ -1134,10 +1126,6 @@ footer {
   cursor: pointer;
 }
 
-.ik_select_list {
-  /*  width: 405px;*/
-}
-
 .ik_select_list .ik_select_option {
   padding: 6px 15px;
   padding-left: 12px;
@@ -1226,12 +1214,10 @@ footer {
   opacity: 1;
 }
 
-/*Firefox 19+*/
 :-moz-placeholder {
   opacity: 1;
 }
 
-/* Firefox 18- */
 :-ms-input-placeholder {
   opacity: 1;
   color: #d5d5d5 !important;
@@ -1265,19 +1251,6 @@ footer {
     width: 81%;
   }
 
-  /*.side-banners_contact {
-    float: none;
-  }
-
-   .side-banners_contact {
-    float: none;
-  }
-
-  .side-banners_contact .banner-block {
-    float: left;
-    margin-right: 15px;
-  }*/
-
   .contact-us {
     width: 820px;
     padding-bottom: 0;
@@ -1299,8 +1272,6 @@ footer {
   .side-banners_contact {
     float: none;
   }
-
-
 
 }
 
@@ -1353,12 +1324,12 @@ footer {
   .banner-advertize {
     margin-top: 10px;
     margin-bottom: 10px;
-
   }
 
   .advertize__input-area {
-    width: 312px;
+    width: 442px;
     float: left;
+    padding-right: 0;
   }
 
   .promo-container {
@@ -1377,15 +1348,14 @@ footer {
   }
 
   .advertize-img {
-    width: 27%;
+    width: 250px;
+    float: right;
+    padding-left: 0;
+    overflow: hidden;
   }
 
   .advertize__image {
     width: 220px;
-  }
-
-  .advertize-img {
-    float: left !important;
   }
 
   .advertize__total {
@@ -1450,13 +1420,10 @@ footer {
   .side-banners_contact {
     float: none;
     width: inherit;
-   /* width: 550px;
-    margin: 0 auto;*/
   }
 
   .side-banners_contact .banner-block {
     float: none;
-/*    margin-right: 15px;*/
   }
 
 }
@@ -1711,9 +1678,6 @@ footer {
     margin-right: 0;
     font-size: 14px;
   }
-  
-
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
