@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
+
     $(".buttons__in-cart_text").first().bind( "click", function(e)  {
 
         var advForm,
@@ -30,7 +31,7 @@ $(document).ready(function () {
             advPhone.addClass("red");
         }
 
-        if ($('.intro-select1')[0].selectedIndex <= 0) {
+        if (introSelect1[0].selectedIndex <= 0) {
             introSelect1link.removeClass("normal");
             introSelect1link.addClass("red");
         }
@@ -70,7 +71,6 @@ $(document).ready(function () {
                 introSelect1;
 
             advForm = $(this).closest(".banner-advertize-form");
-            console.log(advForm)
             advDescription = advForm.find(".banner-advertize__text-desciption");
             advNameorg = advForm.find(".banner-advertize__name-organization");
             advPhone = advForm.find(".banner-advertize__phone");
@@ -92,7 +92,7 @@ $(document).ready(function () {
                 advNameorg.addClass("red");
             }
 
-            if ($('.intro-select1')[0].selectedIndex <= 0) {
+            if (introSelect1[0].selectedIndex <= 0) {
                 introSelect1link.removeClass("normal");
                 introSelect1link.addClass("red");
             }

@@ -607,7 +607,7 @@ aside, .content {
     position: relative; }
   .form-table__cell_form,
   .form-table .form-table__cell_contact-desktop {
-    padding-left: 50px; }
+    padding-left: 80px; }
   .form-table__title {
     margin-bottom: -3px;
     font-size: 30px; }
@@ -957,7 +957,10 @@ footer {
     padding-right: 0; }
 
   .form-table__cell_map {
-    width: inherit; } }
+    width: 465px; }
+
+  .form-table__cell_form {
+    padding-left: 50px; } }
 @media only screen and (min-width: 1024px) and (max-width: 1140px) {
   .advertize {
     width: 78%; }
@@ -1101,6 +1104,10 @@ footer {
 
   .banner-advertize__title-small {
     margin-left: 20px; } }
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  .banner-advertize__upload-container {
+    margin-top: 0;
+    margin-bottom: 30px; } }
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
   .top-banner__img-static {
     display: inline-block;
@@ -1161,18 +1168,7 @@ footer {
     display: none; }
 
   .form-table__cell_form {
-    padding-left: 0; }
-
- /* .side-banners_main {
-    float: none;
-    margin: 0 auto;
-    width: 550px;
-
-    .banner-block {
-      display: inline-block;
-      vertical-align: top;
-    }
-  }*/ }
+    padding-left: 0; } }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .top-banner,
   .logo {

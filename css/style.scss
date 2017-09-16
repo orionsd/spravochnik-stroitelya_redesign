@@ -826,7 +826,7 @@ aside, .content {
 
   &__cell_form,
   .form-table__cell_contact-desktop {
-    padding-left: 50px;
+    padding-left: 80px;
   }
 
   &__title {
@@ -1275,7 +1275,11 @@ footer {
   }
 
   .form-table__cell_map {
-    width: inherit;
+    width: 465px;
+  }
+
+  .form-table__cell_form {
+    padding-left: 50px;
   }
 
 }
@@ -1483,6 +1487,14 @@ footer {
 
 }
 
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+
+  .banner-advertize__upload-container {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 1140px) {
 
   .top-banner__img-static {
@@ -1563,17 +1575,6 @@ footer {
   .form-table__cell_form {
     padding-left: 0;
   }
-
- /* .side-banners_main {
-    float: none;
-    margin: 0 auto;
-    width: 550px;
-
-    .banner-block {
-      display: inline-block;
-      vertical-align: top;
-    }
-  }*/
 
 }
 
