@@ -103,7 +103,8 @@ aside, .content {
   width: 84%; }
 
 .content_main {
-  width: 610px; }
+  width: 610px;
+  margin-left: 20px; }
 
 .side-banners {
   float: right;
@@ -113,6 +114,7 @@ aside, .content {
   margin-bottom: 25px; }
 
 .service {
+  width: 315px;
   padding-top: 20px;
   min-height: 500px;
   background: #ffffff;
@@ -1051,25 +1053,32 @@ footer {
     float: right;
     margin-right: 10px; }
 
-  .side-banners_main {
-    float: right !important;
-    width: inherit !important; }
-    .side-banners_main .banner-block {
-      display: block; }
-
   .contact-us {
     width: 700px;
     float: left;
     margin-bottom: 0; }
 
-  .content_main {
-    float: left !important; } }
+  div.content_main {
+    float: left;
+    margin-left: 20px; }
+
+  .side-banners_main {
+    clear: both;
+    float: none;
+    width: 550px;
+    margin: 0 auto; }
+
+  .banner-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .banner-advertize__upload-container {
     margin-top: 5px;
     margin-bottom: 30px; }
 
   .side-banners {
+    clear: both;
     float: none;
     width: 550px;
     margin: 0 auto; }
@@ -1096,14 +1105,27 @@ footer {
     width: 545px !important; } }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
   .side-banners_contact {
-    width: 550px; } }
+    width: 550px; }
+
+  div.content_main {
+    float: none;
+    margin: 0 auto; } }
 @media only screen and (min-width: 320px) and (max-width: 960px) {
   .banner-advertize__title-container {
     height: inherit;
     line-height: 40px; }
 
   .banner-advertize__title-small {
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .service {
+    float: none;
+    width: 100%;
+    min-height: inherit;
+    padding-bottom: 10px; }
+
+  .service__item {
+    text-align: center; } }
 @media only screen and (min-width: 320px) and (max-width: 640px) {
   .banner-advertize__upload-container {
     margin-top: 0;
@@ -1119,18 +1141,9 @@ footer {
   .top-banner {
     max-width: 100%; }
 
-  .service {
-    width: 100%;
-    min-height: inherit;
-    padding-bottom: 10px; }
-
-  .service__item {
-    text-align: center; }
-
   .nav__item {
     width: 240px; }
 
-  .service,
   .content {
     float: none; }
 
@@ -1298,7 +1311,8 @@ footer {
     font-size: 13px; }
 
   .content_main {
-    width: 97%; } }
+    width: 97%;
+    margin-left: 0; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
     overflow-x: hidden; }

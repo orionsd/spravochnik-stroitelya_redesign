@@ -60,7 +60,7 @@ $(document).ready(function () {
         mass.push(this);
     });
 
-    for (var i = 0; i < (mass.length); i++) {
+    for (var i = 1; i < (mass.length+1); i++) {
         $(".buttons__in-cart").eq(i).bind( "click", function(e)  {
 
             var advForm,
@@ -120,7 +120,6 @@ $(document).ready(function () {
             e.preventDefault();
         });
     }
-
 
 });
 

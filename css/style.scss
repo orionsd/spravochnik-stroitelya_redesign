@@ -144,6 +144,7 @@ aside, .content {
 
 .content_main {
   width: 610px;
+  margin-left: 20px;
 }
 
 .side-banners {
@@ -156,6 +157,7 @@ aside, .content {
 }
 
 .service {
+  width: 315px;
   padding-top: 20px;
   min-height: 500px;
   background: #ffffff;
@@ -853,7 +855,6 @@ aside, .content {
 }
 
 .form {
-
   &__name,
   &__number,
   &__email {
@@ -1404,23 +1405,29 @@ footer {
     float: right;
     margin-right: 10px;
   }
-
-  .side-banners_main {
-    float: right !important;
-    width: inherit !important;
-    .banner-block {
-      display: block;
-    }
-  }
-
+  
   .contact-us {
     width: 700px;
     float: left;
     margin-bottom: 0;
   }
 
-  .content_main {
-    float: left !important;
+  div.content_main {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .side-banners_main {
+    clear: both;
+    float: none;
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .banner-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
   }
 
 }
@@ -1433,6 +1440,7 @@ footer {
   }
 
   .side-banners {
+    clear: both;
     float: none;
     width: 550px;
     margin: 0 auto;
@@ -1463,8 +1471,6 @@ footer {
   .content_main {
     width: 545px !important;
   }
-
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
@@ -1472,6 +1478,12 @@ footer {
   .side-banners_contact {
     width: 550px;
   }
+
+  div.content_main {
+    float: none;
+    margin: 0 auto;
+  }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 960px) {
@@ -1484,6 +1496,18 @@ footer {
   .banner-advertize__title-small {
     margin-left: 20px;
   }
+
+  .service {
+    float: none;
+    width: 100%;
+    min-height: inherit;
+    padding-bottom: 10px;
+  }
+
+  .service__item {
+    text-align: center;
+  }
+
 
 }
 
@@ -1510,21 +1534,10 @@ footer {
     max-width: 100%;
   }
 
-  .service {
-    width: 100%;
-    min-height: inherit;
-    padding-bottom: 10px;
-  }
-
-  .service__item {
-    text-align: center;
-  }
-
   .nav__item {
     width: 240px;
   }
 
-  .service,
   .content {
     float: none;
   }
@@ -1740,6 +1753,7 @@ footer {
   }
   .content_main {
     width: 97%;
+    margin-left: 0;
   }
 
 }
